@@ -12,9 +12,13 @@ public class AppTest{
      *
      * @param testName name of the test case
      */
-	@Test
-    public AppTest( String testName )
+
+    public AppTest()
     {
-		Assert.assertTrue( true );
+    }
+    
+    @Test
+    public void my_test1() {
+    	Assert.assertTrue( true );
     }
 }

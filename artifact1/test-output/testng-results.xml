@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite1" duration-ms="29" started-at="2017-08-15T20:42:53Z" finished-at="2017-08-15T20:42:54Z">
+    <groups>
+    </groups>
+    <test name="test1" duration-ms="29" started-at="2017-08-15T20:42:53Z" finished-at="2017-08-15T20:42:54Z">
+      <class name="project1.artifact1.AppTest">
+        <test-method status="PASS" signature="my_test1()[pri:0, instance:project1.artifact1.AppTest@6ea12c19]" name="my_test1" duration-ms="8" started-at="2017-08-15T22:42:54Z" finished-at="2017-08-15T22:42:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- my_test1 -->
+      </class> <!-- project1.artifact1.AppTest -->
+    </test> <!-- test1 -->
+  </suite> <!-- Suite1 -->
+</testng-results>
