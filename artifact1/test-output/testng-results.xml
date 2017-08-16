@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite1" duration-ms="23" started-at="2017-08-16T11:41:58Z" finished-at="2017-08-16T11:41:58Z">
+  <suite name="Suite1" duration-ms="230" started-at="2017-08-16T16:26:48Z" finished-at="2017-08-16T16:26:48Z">
     <groups>
     </groups>
-    <test name="test1" duration-ms="23" started-at="2017-08-16T11:41:58Z" finished-at="2017-08-16T11:41:58Z">
+    <test name="test1" duration-ms="230" started-at="2017-08-16T16:26:48Z" finished-at="2017-08-16T16:26:48Z">
       <class name="project1.artifact1.AppTest">
-        <test-method status="PASS" signature="my_test1(java.lang.Integer)[pri:0, instance:project1.artifact1.AppTest@643b1d11]" name="my_test1" duration-ms="9" started-at="2017-08-16T13:41:58Z" finished-at="2017-08-16T13:41:58Z">
+        <test-method status="PASS" signature="init()[pri:0, instance:project1.artifact1.AppTest@18be83e4]" name="init" is-config="true" duration-ms="213" started-at="2017-08-16T18:26:48Z" finished-at="2017-08-16T18:26:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="my_test1(java.lang.Integer)[pri:0, instance:project1.artifact1.AppTest@18be83e4]" name="my_test1" duration-ms="4" started-at="2017-08-16T18:26:48Z" finished-at="2017-08-16T18:26:48Z">
           <params>
             <param index="0">
               <value>
@@ -18,6 +22,10 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- my_test1 -->
+        <test-method status="PASS" signature="test_20()[pri:0, instance:project1.artifact1.AppTest@18be83e4]" name="test_20" duration-ms="0" started-at="2017-08-16T18:26:48Z" finished-at="2017-08-16T18:26:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_20 -->
       </class> <!-- project1.artifact1.AppTest -->
     </test> <!-- test1 -->
   </suite> <!-- Suite1 -->

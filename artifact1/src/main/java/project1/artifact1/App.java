@@ -12,4 +12,9 @@ public class App
 	public void setComponentAObject(ComponentA my_obj) {
 		this.ComponentAObject=my_obj;
 	}
+	
+	public void setComponentBObject(ComponentB my_obj) {
+		this.ComponentBObject=my_obj;
+	}
+	
 }

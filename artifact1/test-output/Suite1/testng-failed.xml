@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite1]">
+  <test name="test1(failed)">
+    <parameter name="my_int" value="10"/>
+    <classes>
+      <class name="project1.artifact1.AppTest">
+        <methods>
+          <include name="my_test1"/>
+          <include name="test_20"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- project1.artifact1.AppTest -->
+    </classes>
+  </test> <!-- test1(failed) -->
+</suite> <!-- Failed suite [Suite1] -->

@@ -12,6 +12,13 @@
 	
 	<bean id = "appObject" class = " project1.artifact1.App">
 		<property name="ComponentAObject" ref="componentAObject"/>
+		<property name="ComponentBObject" ref="componentBObject"/>
 	</bean>
-   
+	
+	<bean id ="componentBObject" class = "project1.artifact1.ComponentB">
+		<constructor-arg value = "1"/>
+		<constructor-arg value = "2"/>
+	</bean>
+	
+
 </beans>
