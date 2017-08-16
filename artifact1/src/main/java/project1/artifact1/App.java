@@ -6,10 +6,10 @@ package project1.artifact1;
  */
 public class App 
 {
-    public static void main( String[] args )
-    {
-        System.out.println( "Hello World!" );
-        System.out.println( "Hello World!" );
-        System.out.println( "Hello World!" );
-    }
+	public ComponentA ComponentAObject=null;
+	public ComponentB ComponentBObject=null;
+	
+	public void setComponentAObject(ComponentA my_obj) {
+		this.ComponentAObject=my_obj;
+	}
 }

@@ -2,12 +2,19 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite1" duration-ms="29" started-at="2017-08-15T20:42:53Z" finished-at="2017-08-15T20:42:54Z">
+  <suite name="Suite1" duration-ms="23" started-at="2017-08-16T11:41:58Z" finished-at="2017-08-16T11:41:58Z">
     <groups>
     </groups>
-    <test name="test1" duration-ms="29" started-at="2017-08-15T20:42:53Z" finished-at="2017-08-15T20:42:54Z">
+    <test name="test1" duration-ms="23" started-at="2017-08-16T11:41:58Z" finished-at="2017-08-16T11:41:58Z">
       <class name="project1.artifact1.AppTest">
-        <test-method status="PASS" signature="my_test1()[pri:0, instance:project1.artifact1.AppTest@6ea12c19]" name="my_test1" duration-ms="8" started-at="2017-08-15T22:42:54Z" finished-at="2017-08-15T22:42:54Z">
+        <test-method status="PASS" signature="my_test1(java.lang.Integer)[pri:0, instance:project1.artifact1.AppTest@643b1d11]" name="my_test1" duration-ms="9" started-at="2017-08-16T13:41:58Z" finished-at="2017-08-16T13:41:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- my_test1 -->

@@ -1,7 +1,8 @@
 package project1.artifact1;
 
-import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
+
 import org.testng.Assert;
 
 /**
@@ -14,17 +15,10 @@ public class AppTest{
      * @param testName name of the test case
      */
 
-    private AppTest()
-    {
-    }
-    
     @Test
-    public void my_test1() {
-    	Assert.assertTrue( true );
+    @Parameters("my_int")
+    public void my_test1(Integer my_int) {
+    	Assert.assertEquals(my_int, (Integer) 10);
     }
-    
-    @BeforeSuite
-    public void preparation_1() {
-    	System.out.println("preparation_1");
-    }
+   
 }
