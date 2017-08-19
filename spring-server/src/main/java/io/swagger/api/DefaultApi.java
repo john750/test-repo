@@ -10,6 +10,7 @@ import io.swagger.annotations.*;
 import io.swagger.custom.Greeting;
 
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestHeader;
@@ -35,6 +36,7 @@ public interface DefaultApi {
     	ResponseEntity<Void> rootGet();*/
     
     @RequestMapping(value = "/greeting", method = RequestMethod.GET)
-        ResponseEntity<Greeting> greetingGet(@RequestParam(value="name", defaultValue="World") String name);
+    @CrossOrigin(origins="*")
+    ResponseEntity<Greeting> greetingGet(@RequestParam(value="name", defaultValue="World") String name);
 
 }
