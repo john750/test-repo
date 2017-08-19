@@ -11,4 +11,4 @@ import { Component, OnInit } from '@angular/core';
                                                  this.greeting = res;
                                                 }
                                         );
-   }
+   }}
