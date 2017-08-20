@@ -3,6 +3,7 @@ package io.swagger.api;
 
 import io.swagger.annotations.*;
 import io.swagger.custom.Greeting;
+import io.swagger.custom.ManageEmployee;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -13,6 +14,12 @@ import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RequestPart;
 import org.springframework.web.multipart.MultipartFile;
+
+import org.hibernate.HibernateException; 
+import org.hibernate.Session; 
+import org.hibernate.Transaction;
+import org.hibernate.SessionFactory;
+import org.hibernate.cfg.Configuration;
 
 import java.util.List;
 import java.util.concurrent.atomic.AtomicLong;
@@ -36,6 +43,9 @@ public class DefaultApiController implements DefaultApi {
     
     public ResponseEntity<Greeting> greetingGet(@RequestParam(value="name", defaultValue="World") String name) {
         // do some magic!
+    	ManageEmployee dm_manager=new ManageEmployee();
+    	dm_manager.init();
+        
     	Greeting response_greeting=new Greeting(counter.incrementAndGet(), String.format(template, name));
         return new ResponseEntity<Greeting>(response_greeting, HttpStatus.OK);
     }

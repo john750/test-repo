@@ -42,6 +42,12 @@
     <dependencies>
     
         <dependency>
+	        <groupId>org.springframework.data</groupId>
+	        <artifactId>spring-data-mongodb</artifactId>
+	        <version>1.10.6.RELEASE</version>
+    	</dependency>
+    
+        <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
@@ -75,6 +81,27 @@
             <artifactId>joda-time</artifactId>
         </dependency>
         
+        <!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-core -->
+		<dependency>
+		    <groupId>org.hibernate</groupId>
+		    <artifactId>hibernate-core</artifactId>
+		    <version>5.2.10.Final</version>
+		</dependency>
+		
+	
+		<!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+		<dependency>
+		    <groupId>mysql</groupId>
+		    <artifactId>mysql-connector-java</artifactId>
+		    <version>5.1.38</version>
+		</dependency>
+		
+		<dependency>
+		    <groupId>javax.validation</groupId>
+		    <artifactId>validation-api</artifactId>
+		    <version>1.0.0.GA</version>
+		</dependency>
+		        
 	    <!-- Bean Validation API support -->
 	    <dependency>
 	        <groupId>javax.validation</groupId>
