@@ -6,12 +6,14 @@ import { routing } from './app.routing';
 
 import { AppComponent } from './app.component';
 import { GreetingComponent } from './greeting.component';
+import { Greeting2Component } from './greeting.component2';
 import { Service1Service } from './service1.service';
 
 @NgModule({
   declarations: [
     AppComponent,
-    GreetingComponent
+    GreetingComponent,
+    Greeting2Component
   ],
   imports: [
     BrowserModule,

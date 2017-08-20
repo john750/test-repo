@@ -4,6 +4,7 @@ package io.swagger.api;
 import io.swagger.annotations.*;
 import io.swagger.custom.Greeting;
 import io.swagger.custom.ManageEmployee;
+import io.swagger.models.Response;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -42,11 +43,21 @@ public class DefaultApiController implements DefaultApi {
     }
     
     public ResponseEntity<Greeting> greetingGet(@RequestParam(value="name", defaultValue="World") String name) {
-        // do some magic!
-    	ManageEmployee dm_manager=new ManageEmployee();
-    	dm_manager.init();
+    	//ManageEmployee dm_manager=new ManageEmployee();
+    	//dm_manager.init();
         
     	Greeting response_greeting=new Greeting(counter.incrementAndGet(), String.format(template, name));
         return new ResponseEntity<Greeting>(response_greeting, HttpStatus.OK);
+    }
+    
+    public  ResponseEntity<String> greetingPost(@RequestBody String a) {
+    	System.out.println(a);
+		return new ResponseEntity<String>("new greeting created", HttpStatus.CREATED);
+    	
+    }
+    
+    public  ResponseEntity<Greeting> greetingGetID(@PathVariable("id") int id) {
+    	return new ResponseEntity<Greeting>( new Greeting(id, "lolz"), HttpStatus.OK);
+    	
     }
 }

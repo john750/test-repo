@@ -8,6 +8,7 @@ package io.swagger.api;
 
 import io.swagger.annotations.*;
 import io.swagger.custom.Greeting;
+import io.swagger.models.Response;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -18,6 +19,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RequestPart;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.util.List;
@@ -32,11 +34,20 @@ public interface DefaultApi {
     @ApiResponses(value = { 
         @ApiResponse(code = 200, message = "OK", response = Void.class) })
     
-    /*@RequestMapping(value = "/", method = RequestMethod.GET)
-    	ResponseEntity<Void> rootGet();*/
     
     @RequestMapping(value = "/greeting", method = RequestMethod.GET)
     @CrossOrigin(origins="*")
     ResponseEntity<Greeting> greetingGet(@RequestParam(value="name", defaultValue="World") String name);
+    
+    @RequestMapping(value = "/greetings", method = RequestMethod.POST)
+    @CrossOrigin(origins="*")
+    @ResponseBody
+    ResponseEntity<String> greetingPost(@RequestBody String a);
+    
 
+    @RequestMapping(value = "/greetings/{id}", method = RequestMethod.GET)
+    @CrossOrigin(origins="*")
+    @ResponseBody
+    ResponseEntity<Greeting> greetingGetID(@PathVariable("id") int id);
+   
 }

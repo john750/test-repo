@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Http, Response, Headers } from '@angular/http';
+import { Http, Response, Headers, RequestOptions } from '@angular/http';
 import { Observable } from 'rxjs/Observable';
 import { Greeting } from './greeting';
 import 'rxjs/add/operator/map';
@@ -19,12 +19,23 @@ export class Service1Service {
     return headers;
   }
 
-    get(): Observable<Greeting> {
+    get(id: number): Observable<Greeting> {
     const greeting$ = this.http
-      .get(`${this.baseUrl}/greeting`, {headers: this.getHeaders()})
+      .get(`${this.baseUrl}/greetings/${id}`, {headers: this.getHeaders()})
       .map(mapGreeting);
       return greeting$;
   }
+
+    post(): Observable<Greeting> {
+      const greeting: Greeting = <Greeting>({id: 22, content: 'my content, bitch'});
+
+    const greeting$ = this.http
+      .post(`${this.baseUrl}/greetings`, greeting, {headers: this.getHeaders()})
+      .map(mapGreeting);
+      return greeting$;
+  }
+
+
 /*
   getAll(id: number): Observable<Greeting[]> {
     const greetings$ = this.http
