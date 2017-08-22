@@ -12,6 +12,8 @@ public class ComponentA {
 		this.my_int2=my_int;
 	}
 
-	Integer xh;
+	//Integer xh;
+    //Integer xh;
+    //Integer xh;
 
 }
