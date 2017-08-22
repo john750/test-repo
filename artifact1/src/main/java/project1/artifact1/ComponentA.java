@@ -13,5 +13,5 @@ public class ComponentA {
 	}
 
 	Integer xh, sdf, dfgfdgdfgd;
-	Integer sdf;
+	Integer sdf, sd,a;
 }
