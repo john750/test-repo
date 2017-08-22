@@ -4,8 +4,8 @@ public class ComponentB {
 	public Integer my_int=null;
 	public Integer my_int2=null;
 	
-	public ComponentB(Integer int_1, Integer int_6) {
-		this.my_int=int_1;
+	public ComponentB(Integer int_1, Integer int_2222) {
+		this.my_int=int_2222;
 		this.my_int2=int_6;
 	}
 }
