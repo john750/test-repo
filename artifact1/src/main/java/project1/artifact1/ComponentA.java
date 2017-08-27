@@ -14,4 +14,9 @@ public class ComponentA {
 
 	Integer xh, sdf, dfgfdgdfgd;
 	Integer sdf;
+
+
+	public Integer mult(Integer a, Integer b){
+		return a*b;
+	}
 }
